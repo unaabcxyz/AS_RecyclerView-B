@@ -15,6 +15,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
+            android:text="Mahasiswa Baru"
             android:textSize="25sp"
             android:textStyle="bold"/>
         <TextView
@@ -53,7 +54,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Tanggal lahir"/>
+            android:text="Tanggal lahir (yyyy-mm--dd)"/>
         <EditText
             android:id="@+id/tanggalLahirEditText"
             android:layout_width="match_parent"

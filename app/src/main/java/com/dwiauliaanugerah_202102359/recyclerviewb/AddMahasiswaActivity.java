@@ -22,7 +22,7 @@ public class AddMahasiswaActivity extends AppCompatActivity {
     private Button _saveButton;
     private EditText _alamatEditText, _namaEditText, _nimEditText, _tahunMasukEditText, _tanggalLahirEditText;
     private EditText _tempatLahirEditText;
-    private Spinner _jenisKelaminSpinner, _jpSpinner, _statusNikahSpinner;
+    private Spinner _jenisKelaminSpinner, _jpSpinner, _statusPernikahanSpinner;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,7 +44,7 @@ public class AddMahasiswaActivity extends AppCompatActivity {
                 String jp = _jpSpinner.getSelectedItem().toString();
                 String nama = _namaEditText.getText().toString();
                 String nim = _nimEditText.getText().toString();
-                String statusNikah = _statusNikahSpinner.getSelectedItem().toString();
+                String statusPernikahan = _statusPernikahanSpinner.getSelectedItem().toString();
                 String tahunMasuk = _tahunMasukEditText.getText().toString();
                 String tanggalLahir = _tanggalLahirEditText.getText().toString();
                 String tempatLahir = _tempatLahirEditText.getText().toString();
@@ -67,7 +67,7 @@ public class AddMahasiswaActivity extends AppCompatActivity {
                         "&tanggalLahir=" + tanggalLahir +
                         "&alamat=" + alamat +
                         "&jp=" + jp +
-                        "&statusNikah=" + statusNikah +
+                        "&statusPernikahan=" + statusPernikahan +
                         "&tahunMasuk=" + tahunMasuk;
 
                 AsyncHttpClient ahc = new AsyncHttpClient();
@@ -96,7 +96,7 @@ public class AddMahasiswaActivity extends AppCompatActivity {
         _jpSpinner = findViewById(R.id.jpSpinner);
         _namaEditText = findViewById(R.id.namaEditText);
         _nimEditText = findViewById(R.id.nimEditText);
-        _statusNikahSpinner = findViewById(R.id.statusNikahSpinner);
+        _statusPernikahanSpinner = findViewById(R.id.statusNikahSpinner);
         _tahunMasukEditText= findViewById(R.id.tahunMasukEditText);
         _tanggalLahirEditText = findViewById(R.id.tanggalLahirEditText);
         _tempatLahirEditText = findViewById(R.id.tempatLahirEditText);
